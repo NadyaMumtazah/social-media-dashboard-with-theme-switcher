@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --mainBackground: #FFFFFF;
+    --cardBackground: hsl(227, 47%, 96%);
+    --textBlackWhite: #000000;
+    --username: hsl(228, 12%, 44%);
+    --iconUp: hsl(163, 72%, 41%);
+    --iconDown: hsl(356, 69%, 56%);
+}
+img {
+    width: 25px;
+    height: 25px;
+}
+body {
+    background-color: var(--mainBackground);
+    font-family: 'Inter', sans-serif;
+}
+section {
+    margin: 20px 0px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: var(--cardBackground);
+}
+.up {
+    color: var(--iconUp);
+}
+.down {
+    color: var(--iconDown);
+}
+.info p {
+    letter-spacing: 5px;
+}
+p {
+    color: var(--username);
+}
+.facebook, .twitter {
+    border-top: 3px solid hsl(208, 92%, 53%);
+}
+.instagram {
+    border-top: 3px solid hsl(329, 70%, 58%);
+}
+.youtube {
+    border-top: 3px solid hsl(348, 97%, 39%);
+}
+.navbar-brand {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--username);
+}
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+.insights {
+    margin: 15px;
+    padding: 20px;
+    background-color: var(--cardBackground);
+    border-radius: 5px;
+}
+.insight {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+a img {
+    width: 10px;
+    height: 10px;
+}
+h2, h1 {
+    font-weight: 700;
+    color: var(--textBlackWhite);
+}
+.attribution {
+    color: grey !important;
+}
+
+
+.dark-mode-on {
+    --mainBackground: hsl(230, 17%, 14%);
+    --cardBackground: hsl(228, 28%, 20%);
+    --textBlackWhite: #FFFFFF;
+    --username: #FFFFFF;
+}
